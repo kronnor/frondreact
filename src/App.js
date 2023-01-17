@@ -1,20 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./layout/Navbar";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
-       <header>
-        <nav>
-            <a href="#">INICIO </a>
-            <a href="#">ACERCA DE MI </a>
-            <a href="#">CONTACTOS </a>
-        </nav>
-    </header>
-    <title style="background-color: lavender;">REACT</title>
-      <label>cargar foto</label>
-      <input type= "file"></input>
+      <Navbar />
+      <center><h1>Página React</h1></center>
+      <Home/>
     </div>
   );
 }
+
+
 export default App;
